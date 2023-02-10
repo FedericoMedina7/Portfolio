@@ -1,0 +1,31 @@
+@import '../base/variables';
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    ul {
+        display: flex;
+
+        li {
+            a {
+                margin: 15px;
+                color: #fff;
+                font-family: $font-nunito;
+                font-size: 1.2rem;
+
+                &:hover {
+                    font-size: 2rem;
+                    border-bottom: 3px solid $color-bordes;
+                    transition: 0.5s;
+                }
+
+            }
+        }
+    }
+}
